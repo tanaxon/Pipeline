@@ -40,7 +40,7 @@ pipeline {
           dir ('Pipeline') {
             httpRequest ignoreSslErrors: true, 
             responseHandle: 'NONE', 
-            url: "http://10.123.0.174:8085/ivy/pro/IvyDeploymentTool/deployment_tool_ivy/144CBB1313C1F669/start.ivp?applicationName=PIPELINE_PREVIEW&useActiveDirectory=false&redeploy=true&newApplication=false&downloadUrl=http%3A%2F%2F10.123.0.174%3A9000%2Fjob%2F01-packaging%2Fjob%2F$BRANCH_NAME_ENCODE2%2F$CURRENT_BUILD%2Fartifact%2Ftarget%2Fpipeline-1.0.0-SNAPSHOT.iar", 
+            url: "http://10.123.0.174:8085/ivy/pro/IvyDeploymentTool/deployment_tool_ivy/144CBB1313C1F669/start.ivp?applicationName=PIPELINE_PREVIEW&useActiveDirectory=false&redeploy=true&newApplication=false&downloadUrl=http%3A%2F%2F10.123.0.174%3A9000%2Fjob%2FPipeline%2Fjob%2F$BRANCH_NAME_ENCODE2%2F$CURRENT_BUILD%2Fartifact%2Ftarget%2Fpipeline-1.0.0-SNAPSHOT.iar", 
             validResponseCodes: '200'
           }
 
@@ -74,7 +74,7 @@ pipeline {
             dir ('Pipeline') {
               httpRequest ignoreSslErrors: true, 
               responseHandle: 'NONE', 
-              url: "http://10.123.0.174:8085/ivy/pro/IvyDeploymentTool/deployment_tool_ivy/144CBB1313C1F669/start.ivp?applicationName=PIPELINE&useActiveDirectory=false&redeploy=true&newApplication=false&downloadUrl=http%3A%2F%2F10.123.0.174%3A9000%2Fjob%2F01-packaging%2Fjob%2F$BRANCH_NAME_ENCODE2%2F$CURRENT_BUILD%2Fartifact%2Ftarget%2Fpipeline-1.0.0-SNAPSHOT.iar", 
+              url: "http://10.123.0.174:8085/ivy/pro/IvyDeploymentTool/deployment_tool_ivy/144CBB1313C1F669/start.ivp?applicationName=PIPELINE&useActiveDirectory=false&redeploy=true&newApplication=false&downloadUrl=http%3A%2F%2F10.123.0.174%3A9000%2Fjob%2FPipeline%2Fjob%2F$BRANCH_NAME_ENCODE2%2F$CURRENT_BUILD%2Fartifact%2Ftarget%2Fpipeline-1.0.0-SNAPSHOT.iar", 
               validResponseCodes: '200'
             }
         }
