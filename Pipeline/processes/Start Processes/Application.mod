@@ -14,9 +14,9 @@ An0 @TextInP .xml .xml #zField
 An0 @TextInP .responsibility .responsibility #zField
 An0 @StartRequest f0 '' #zField
 An0 @EndTask f1 '' #zField
-An0 @RichDialog f3 '' #zField
-An0 @PushWFArc f4 '' #zField
+An0 @RichDialog f5 '' #zField
 An0 @PushWFArc f2 '' #zField
+An0 @PushWFArc f3 '' #zField
 >Proto An0 An0 Application #zField
 An0 f0 outLink pipeline.ivp #txt
 An0 f0 type pipeline.Data #txt
@@ -46,35 +46,35 @@ An0 f0 @C|.xml '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 </elementInfo>
 ' #txt
 An0 f0 @C|.responsibility Everybody #txt
-An0 f0 81 49 30 30 -31 17 #rect
+An0 f0 81 49 30 30 24 -10 #rect
 An0 f0 @|StartRequestIcon #fIcon
 An0 f1 type pipeline.Data #txt
-An0 f1 337 49 30 30 0 15 #rect
+An0 f1 81 177 30 30 0 15 #rect
 An0 f1 @|EndIcon #fIcon
-An0 f3 targetWindow NEW #txt
-An0 f3 targetDisplay TOP #txt
-An0 f3 richDialogId pipeline.Pipeline #txt
-An0 f3 startMethod start() #txt
-An0 f3 type pipeline.Data #txt
-An0 f3 requestActionDecl '<> param;' #txt
-An0 f3 responseActionDecl 'pipeline.Data out;
+An0 f5 targetWindow NEW #txt
+An0 f5 targetDisplay TOP #txt
+An0 f5 richDialogId pipeline.Pipeline #txt
+An0 f5 startMethod start() #txt
+An0 f5 type pipeline.Data #txt
+An0 f5 requestActionDecl '<> param;' #txt
+An0 f5 responseActionDecl 'pipeline.Data out;
 ' #txt
-An0 f3 responseMappingAction 'out=in;
+An0 f5 responseMappingAction 'out=in;
 ' #txt
-An0 f3 isAsynch false #txt
-An0 f3 isInnerRd false #txt
-An0 f3 userContext '* ' #txt
-An0 f3 168 42 112 44 0 -8 #rect
-An0 f3 @|RichDialogIcon #fIcon
-An0 f4 expr out #txt
-An0 f4 111 64 168 64 #arcP
+An0 f5 isAsynch false #txt
+An0 f5 isInnerRd false #txt
+An0 f5 userContext '* ' #txt
+An0 f5 78 116 36 24 20 -2 #rect
+An0 f5 @|RichDialogIcon #fIcon
 An0 f2 expr out #txt
-An0 f2 280 64 337 64 #arcP
+An0 f2 96 79 96 116 #arcP
+An0 f3 expr out #txt
+An0 f3 96 140 96 177 #arcP
 >Proto An0 .type pipeline.Data #txt
 >Proto An0 .processKind NORMAL #txt
 >Proto An0 0 0 32 24 18 0 #rect
 >Proto An0 @|BIcon #fIcon
-An0 f0 mainOut f4 tail #connect
-An0 f4 head f3 mainIn #connect
-An0 f3 mainOut f2 tail #connect
-An0 f2 head f1 mainIn #connect
+An0 f0 mainOut f2 tail #connect
+An0 f2 head f5 mainIn #connect
+An0 f5 mainOut f3 tail #connect
+An0 f3 head f1 mainIn #connect
